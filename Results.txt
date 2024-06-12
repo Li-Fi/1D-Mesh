@@ -1,0 +1,30 @@
+Test 1: Exact case, Rmax = 0
+s1 = 1, s2 = 1, L = 10
+n = 10
+Lmax = 1.00000, Lmin = 1.00000, Ltotal = 10.00000
+Rmax = 0.000
+
+Test 2: Typical case, s1 < s2
+s1 = 1, s2 = 5, L = 10
+n = 4
+Lmax = 3.78844, Lmin = 1.45614, Ltotal = 10.00000
+Rmax = 0.456
+
+Test 3: Typical case, s1 > s2
+s1 = 5, s2 = 1, L = 10
+n = 4
+Lmax = 3.78844, Lmin = 1.45614, Ltotal = 10.00000
+Rmax = 0.456
+
+Test 4: L <<< s
+s1 = 5, s2 = 5, L = 1
+n = 1
+Lmax = 1.00000, Lmin = 1.00000, Ltotal = 1.00000
+Rmax = 4.000
+
+Test 5: Large L
+s1 = 1, s2 = 2, L = 100
+n = 69
+Lmax = 1.98953, Lmin = 1.01578, Ltotal = 100.00153
+Rmax = 0.016
+
