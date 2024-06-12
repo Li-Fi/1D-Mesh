@@ -41,6 +41,8 @@ def linear_mesh(s1, s2, L, n):
 		ERR_final.append(abs(1 - mesh_final[i+1]/mesh_final[i]))
 	ERR_final.append(abs(1 - s2/mesh_final[n-1]))
 	
+	# For improved performance this step can be optimized to avoid calculating ERR_final in both directions.
+	# E.g. by pre-sorting each L_{i} and L_{i+1} pair before calculating abs(1 - L_{i+1}/L{i}) 
 	ERR_final_b = []
 	mesh_final_b = mesh_final[::-1]
 	ERR_final_b.append(abs(1 - mesh_final_b[0]/s2))
